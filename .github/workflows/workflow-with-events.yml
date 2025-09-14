@@ -1,6 +1,8 @@
 name : First Event Workflow
 on :
-  [push,workflow_dispatch]
+  push :
+    branches :
+      -main
 jobs :
   job-1 :
     runs-on : ubuntu-latest
