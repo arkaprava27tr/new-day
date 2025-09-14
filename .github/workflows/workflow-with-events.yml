@@ -1,7 +1,7 @@
 name : First Event Workflow
 on :
   push :
-    branches :
+    branches-ignore:
       -main
 jobs :
   job-1 :
