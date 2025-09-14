@@ -1,8 +1,12 @@
 name : First Event Workflow
 on :
   push :
-    branches-ignore:
+    branches:
       -main
+      -feature/*
+      -feature/**
+    paths :
+      -"temp.md"
 jobs :
   job-1 :
     runs-on : ubuntu-latest
